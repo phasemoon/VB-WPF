@@ -1,0 +1,150 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VB+WPF_MvvMLight연습(연봉관리)
+</name>
+</assembly>
+<members>
+<member name="T:VB_WPF_MvvMLight연습_연봉관리_.My.MyWpfExtension">
+ <summary>
+ WPF용 My 네임스페이스에 사용할 수 있는 속성을 정의하는 데 사용되는 모듈입니다.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:VB_WPF_MvvMLight연습_연봉관리_.My.MyWpfExtension.Application">
+ <summary>
+ 실행하는 응용 프로그램에 대한 응용 프로그램 개체를 반환합니다.
+ </summary>
+</member>
+<member name="P:VB_WPF_MvvMLight연습_연봉관리_.My.MyWpfExtension.Computer">
+ <summary>
+ 호스트 컴퓨터에 대한 정보를 반환합니다.
+ </summary>
+</member>
+<member name="P:VB_WPF_MvvMLight연습_연봉관리_.My.MyWpfExtension.User">
+ <summary>
+ 현재 사용자에 대한 정보를 반환합니다.  현재 Windows 사용자 자격 증명을 사용하여 응용 프로그램을 실행하려면 
+ My.User.InitializeWithWindowsUser()를 호출하십시오.
+ </summary>
+</member>
+<member name="P:VB_WPF_MvvMLight연습_연봉관리_.My.MyWpfExtension.Log">
+ <summary>
+ 응용 프로그램 로그를 반환합니다. 응용 프로그램의 구성 파일로 수신기를 구성할 수 있습니다.
+ </summary>
+</member>
+<member name="P:VB_WPF_MvvMLight연습_연봉관리_.My.MyWpfExtension.Windows">
+ <summary>
+ 프로젝트에 정의된 Windows 컬렉션을 반환합니다.
+ </summary>
+</member>
+<member name="T:VB_WPF_MvvMLight연습_연봉관리_.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:VB_WPF_MvvMLight연습_연봉관리_.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:VB_WPF_MvvMLight연습_연봉관리_.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.Employee.GetSampleEmployees">
+ <summary>
+ 메모리에 임시 직원 목록을 만들고 Employee 클래스의 ObservableCollection을 반환합니다.
+ 직원 세부 정보를 로드하고 저장하는 데 데이터베이스를 사용할 필요가 없도록 UI 바인딩에 해당 목록을 사용하였습니다.
+ </summary>
+ <returns>Employee 클래스의 ObservableCollection</returns>
+</member>
+<member name="T:VB_WPF_MvvMLight연습_연봉관리_.ViewModel.MainViewModel">
+ <summary>
+ This class contains properties that the main View can data bind to.
+ <para>
+ Use the <strong>mvvminpc</strong> snippet to add bindable properties to this ViewModel.
+ </para>
+ <para>
+ You can also use Blend to data bind with the tool's support.
+ </para>
+ <para>
+ See http://www.galasoft.ch/mvvm
+ </para>
+ </summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.ViewModel.MainViewModel.#ctor">
+ <summary>
+ Initializes a new instance of the MainViewModel class.
+ </summary>
+</member>
+<member name="T:VB_WPF_MvvMLight연습_연봉관리_.ViewModel.ViewModelLocator">
+ <summary>
+ This class contains static references to all the view models in the
+ application and provides an entry point for the bindings.
+ 이 클래스는 애플리케이션의 모든보기 모델에 대한
+ 정적 참조를 포함하고 바인딩에 대한 진입 점을 제공합니다.
+ 
+ ViewModelLocator은 ViewModel들을 가지고 있다가 찾아주는 역할을 한다.
+ 즉 View에서 해당 ViewModelLocator을 보고, 선언되어있는 ViewModel을 찾아온다.
+ </summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.ViewModel.ViewModelLocator.#ctor">
+ <summary>
+ Initializes a new instance of the ViewModelLocator class.
+ </summary>
+</member>
+<member name="T:VB_WPF_MvvMLight연습_연봉관리_.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:VB_WPF_MvvMLight연습_연봉관리_.XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+<summary>
+GeneratedInternalTypeHelper
+</summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+<summary>
+CreateInstance
+</summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+<summary>
+GetPropertyValue
+</summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+<summary>
+SetPropertyValue
+</summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+<summary>
+CreateDelegate
+</summary>
+</member>
+<member name="M:VB_WPF_MvvMLight연습_연봉관리_.XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+<summary>
+AddEventHandler
+</summary>
+</member>
+</members>
+</doc>
