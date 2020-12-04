@@ -11,9 +11,13 @@
         <vm:MessageViewModel/>
     </Window.DataContext>
     <Grid>
-        <TextBox x:Name="textBox" Text="{Binding MessageText, Mode=OneWayToSource}"
+        <!--<TextBox x:Name="textBox" Text="{Binding MessageText, Mode=OneWayToSource}"
                  Height="23" Margin="204,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
         <Button x:Name="button"  Command="{Binding DisplayMessageCommand}"
+                Content="Button" HorizontalAlignment="Left" Margin="226,151,0,0" VerticalAlignment="Top" Width="75"/>-->
+        <TextBox x:Name="txtMyText" 
+                 Height="23" Margin="204,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Button x:Name="button"  Command="{Binding DisplayMessageCommand}" CommandParameter="{Binding ElementName=txtMyText,Path=Text}"
                 Content="Button" HorizontalAlignment="Left" Margin="226,151,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
