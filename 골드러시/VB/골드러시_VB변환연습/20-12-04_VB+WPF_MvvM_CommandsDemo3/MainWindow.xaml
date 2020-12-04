@@ -1,0 +1,21 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_20_12_04_VB_WPF_MvvM_CommandsDemo3"
+        xmlns:vm="clr-namespace:_20_12_04_VB_WPF_MvvM_CommandsDemo3.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <StackPanel Width="300">
+            <TextBlock>Messages</TextBlock>
+            <ComboBox x:Name="comboMessages" ItemsSource="{Binding MyMessages}"/>
+            <Button Command="{Binding MessageBoxCommand}" CommandParameter="{Binding ElementName=comboMessages,Path=SelectedItem}">Message Box</Button>
+            <Button Command="{Binding ConsoleCommand}" CommandParameter="{Binding ElementName=comboMessages,Path=SelectedItem}">Console Log</Button>
+        </StackPanel>
+    </Grid>
+</Window>
