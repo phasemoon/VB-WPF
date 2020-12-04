@@ -1,4 +1,5 @@
-﻿Imports _20_12_04_VB_WPF_MvvM_CommandBinding기본2.ViewModel
+﻿'출처: https://blog.naver.com/goldrushing/221245862378
+Imports _20_12_04_VB_WPF_MvvM_CommandBinding기본2.ViewModel
 Class MainWindow
     Public Sub New()
 

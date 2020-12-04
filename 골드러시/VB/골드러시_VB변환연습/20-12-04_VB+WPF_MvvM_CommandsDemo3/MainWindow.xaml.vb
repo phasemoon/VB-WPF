@@ -1,4 +1,5 @@
-﻿
+﻿'출처: https://blog.naver.com/goldrushing/221245862378
+
 Class MainWindow
     Public Sub New()
 
