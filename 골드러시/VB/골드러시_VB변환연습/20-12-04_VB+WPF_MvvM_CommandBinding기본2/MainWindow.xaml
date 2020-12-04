@@ -1,0 +1,20 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_20_12_04_VB_WPF_MvvM_CommandBinding기본2"
+        xmlns:vm="clr-namespace:_20_12_04_VB_WPF_MvvM_CommandBinding기본2.ViewModel"
+               mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" >
+    <Window.DataContext>
+        <vm:MessageViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <TextBox x:Name="textBox" Text="{Binding MessageText, Mode=OneWayToSource}"
+                 Height="23" Margin="204,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Button x:Name="button"  Command="{Binding DisplayMessageCommand}"
+                Content="Button" HorizontalAlignment="Left" Margin="226,151,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
