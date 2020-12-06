@@ -1,0 +1,48 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VB_WPF_DataBindingDemo변환"
+        mc:Ignorable="d"
+        Title="List of Products" SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <CollectionViewSource
+            Source="{Binding Source={x:Static Application.Current},Path=auctionitems}"
+            x:Key="ListingDataView"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Margin="8,20,8,8">List of Items For sale:</TextBlock>
+        <CheckBox Name="Grouping" Grid.Row="1" Grid.Column="0"
+                  Checked="Grouping_Checked" Unchecked="Grouping_Unchecked"
+                  Margin="8">Group by category
+        </CheckBox>
+        <CheckBox Name="Filtering" Grid.Row="1" Grid.Column="1"
+                  Checked="Filtering_Checked" Unchecked="Filtering_Unchecked"
+                  Margin="8">Show Only bargains
+        </CheckBox>
+        <CheckBox Name="Sorting" Grid.Row="1" Grid.Column="2"
+                  Margin="8">Sort by category and date
+        </CheckBox>
+
+        <ListBox Name="Master" AutomationProperties.Name="List of Itemos For Sale" Grid.Row="2" Grid.ColumnSpan="3" Margin="8"
+                 AutomationProperties.LiveSetting="Assertive"></ListBox>
+        <ContentControl Name="Detail" Grid.Row="3" Grid.Column="3"
+                        Margin="9,0,0,0" IsTabStop="False"/>
+        <Button Name="OpenAddPropduct" Grid.Row="4" Grid.Column="1" Content="Add Product" HorizontalAlignment="Center"
+                Margin="8"
+                Click="OpenAddPropduct_Click"/>
+    </Grid>
+</Window>
