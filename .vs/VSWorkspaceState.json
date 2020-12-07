@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\마이크로소프트",
+    "\\마이크로소프트\\WPF샘플변환",
+    "\\마이크로소프트\\WPF샘플변환\\WPF샘플"
   ],
+  "SelectedNode": "\\마이크로소프트\\WPF샘플변환\\WPF샘플\\WPF샘플.sln",
   "PreviewInSolutionExplorer": false
 }

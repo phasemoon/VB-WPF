@@ -5,6 +5,59 @@
              Startup="Application_Startup"
     StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type local:AuctionItem}">
+                <Grid Name="AuctionItemsGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="86"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="1" Margin="0,0,8,0"
+                                   Name="descriptionTitle">
+                    Decription:
+                    </TextBlock>
+                    <TextBlock Grid.Row="0" Grid.Column="2"
+                               Text="{Binding Path=Description}"/>
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="DetailsProductListingTemplate">
+                <Grid Margin="5,5,5,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="113"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Margin="0,0,8,0"
+                       Name="descriptionTitle">
+                      Description:
+                    </TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="0" Margin="0,0,8,0"
+                       Name="startPriceTitle">
+                      Start Price:
+                    </TextBlock>
+                    <TextBlock Grid.Row="2" Grid.Column="0" Margin="0,0,8,0"
+                       Name="startDateTitle">
+                      Start Date:
+                    </TextBlock>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
         
     </Application.Resources>
 </Application>

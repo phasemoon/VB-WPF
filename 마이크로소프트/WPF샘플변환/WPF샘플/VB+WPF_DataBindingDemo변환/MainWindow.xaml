@@ -42,10 +42,10 @@
                  ItemsSource="{Binding Source={StaticResource ListingDataView}}">
             
         </ListBox>
-        <ContentControl Name="Detail" Grid.Row="3" Grid.Column="3"
+        <ContentControl Name="Detail" Grid.Row="3" Grid.ColumnSpan="3"
                         Content="{Binding Source={StaticResource ListingDataView}}"
-                        
-                        Margin="9,0,0,0" IsTabStop="False"/>
+                        ContentTemplate="{StaticResource DetailsProductListingTemplate}"
+                        Margin="9,0,0,0"/>
         <Button Name="OpenAddPropduct" Grid.Row="4" Grid.Column="1" Content="Add Product" HorizontalAlignment="Center"
                 Margin="8"
                 Click="OpenAddPropduct_Click"/>

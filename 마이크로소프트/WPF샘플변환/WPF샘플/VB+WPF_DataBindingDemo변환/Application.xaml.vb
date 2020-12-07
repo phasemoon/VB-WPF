@@ -8,6 +8,7 @@ Class Application
     Public Property CurrentUser As User
     Public Property AuctionItems As ObservableCollection(Of AuctionItem) = New ObservableCollection(Of AuctionItem)()
 
+
     Private Sub Application_Startup(sender As Object, e As StartupEventArgs)
         LoadAuctionData()
     End Sub

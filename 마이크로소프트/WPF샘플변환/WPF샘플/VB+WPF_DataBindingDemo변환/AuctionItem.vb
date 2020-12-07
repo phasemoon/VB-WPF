@@ -11,7 +11,7 @@ Public Class AuctionItem
     Private mStartPrice As Integer
 
     Public Sub New(description As String, category As ProductCategory, startPrice As Integer, startDate As DateTime, vOwner As User, specialFeatures As SpecialFeatures)
-        mDescription = mDescription
+        mDescription = description
         mCategory = category
         mStartDate = startDate
         Owner = vOwner
