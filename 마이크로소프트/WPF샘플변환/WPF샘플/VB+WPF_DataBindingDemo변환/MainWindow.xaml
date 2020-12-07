@@ -8,7 +8,7 @@
         Title="List of Products" SizeToContent="WidthAndHeight">
     <Window.Resources>
         <CollectionViewSource
-            Source="{Binding Source={x:Static Application.Current},Path=auctionitems}"
+            Source="{Binding Source={x:Static Application.Current},Path=AuctionItems}"
             x:Key="ListingDataView"/>
     </Window.Resources>
     <Grid>
@@ -38,8 +38,13 @@
         </CheckBox>
 
         <ListBox Name="Master" AutomationProperties.Name="List of Itemos For Sale" Grid.Row="2" Grid.ColumnSpan="3" Margin="8"
-                 AutomationProperties.LiveSetting="Assertive"></ListBox>
+                 AutomationProperties.LiveSetting="Assertive"
+                 ItemsSource="{Binding Source={StaticResource ListingDataView}}">
+            
+        </ListBox>
         <ContentControl Name="Detail" Grid.Row="3" Grid.Column="3"
+                        Content="{Binding Source={StaticResource ListingDataView}}"
+                        
                         Margin="9,0,0,0" IsTabStop="False"/>
         <Button Name="OpenAddPropduct" Grid.Row="4" Grid.Column="1" Content="Add Product" HorizontalAlignment="Center"
                 Margin="8"
