@@ -43,8 +43,75 @@ Public Class AuctionItem
         End Set
     End Property
 
+    Public Property StartPrice As Integer
+        Get
+            Return mStartPrice
+        End Get
+        Set(value As Integer)
+            If value < 0 Then
+                Throw New ArgumentException("Price must be positive. Provide a psitive price")
+            End If
+            mStartPrice = value
+            OnPropertyChanged("StartPrice")
+            'OnPropertyChanged("CurrentPrice")
+        End Set
+    End Property
+
+    Public Property StartDate As DateTime
+        Get
+            Return mStartDate
+        End Get
+        Set(value As DateTime)
+            mStartDate = value
+            OnPropertyChanged("StartDate")
+        End Set
+    End Property
+
+    Public Property Category As ProductCategory
+        Get
+            Return mCategory
+        End Get
+        Set(value As ProductCategory)
+            mCategory = value
+            OnPropertyChanged("Category")
+        End Set
+    End Property
+
     Public ReadOnly Property Owner As User
 
+    Public Property SpecialFeatures As SpecialFeatures
+        Get
+            Return mSpecialFeatures
+        End Get
+        Set(value As SpecialFeatures)
+            mSpecialFeatures = value
+            OnPropertyChanged("SpecialFeatures")
+        End Set
+    End Property
+
+    'c#
+    'Public ReadOnlyObservableCollection<Bid> Bids => New ReadOnlyObservableCollection<Bid>(_bids);
+    Public ReadOnly Property Bids As ReadOnlyObservableCollection(Of Bid)
+        Get
+            Return New ReadOnlyObservableCollection(Of Bid)(mBids)
+        End Get
+    End Property
+
+    Public ReadOnly Property CurrentPrice As Integer
+        Get
+            Dim price = 0
+
+            'There is at least one bid on this product
+            '제품에는 적어도 하나의 bid(입찰)가 있습니다
+            If (mBids.Count > 0) Then
+                Dim lastBid = mBids(mBids.Count - 1)
+                price = lastBid.Amount
+            Else
+                price = mStartPrice
+            End If
+            Return price
+        End Get
+    End Property
 
 
 #End Region

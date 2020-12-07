@@ -25,6 +25,14 @@
                     </TextBlock>
                     <TextBlock Grid.Row="0" Grid.Column="2"
                                Text="{Binding Path=Description}"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,0,8,0">
+                    Current Price:
+                    </TextBlock>
+                    <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
+                        <TextBlock Name="Dollar" Text="$"/>
+                        <TextBlock Name="CurrentPriceDTdataType"
+                                   Text="{Binding Path=CurrentPrice}"/>
+                    </StackPanel>
                 </Grid>
             </DataTemplate>
 
@@ -38,6 +46,8 @@
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
+                        <RowDefinition/>
+
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="113"/>
@@ -47,14 +57,40 @@
                        Name="descriptionTitle">
                       Description:
                     </TextBlock>
+                    <TextBlock Grid.Row="0" Grid.Column="1"
+                               Text="{Binding Path=Description}"/>
                     <TextBlock Grid.Row="1" Grid.Column="0" Margin="0,0,8,0"
                        Name="startPriceTitle">
                       Start Price:
                     </TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="1"
+                               Text="{Binding Path=StartPrice}"/>
                     <TextBlock Grid.Row="2" Grid.Column="0" Margin="0,0,8,0"
                        Name="startDateTitle">
                       Start Date:
                     </TextBlock>
+                    <TextBlock Grid.Row="2" Grid.Column="1"
+                               Text="{Binding Path=StartDate}"/>
+                    <TextBlock Grid.Row="3" Grid.Column="0" Margin="0,0,8,0">
+                      Category:
+                    </TextBlock>
+                    <TextBlock Grid.Row="3" Grid.Column="1"
+                               Text="{Binding Path=Category}"/>
+                    <TextBlock Grid.Row="4" Grid.Column="0" Margin="0,0,8,0">
+                      Owner's Name
+                    </TextBlock>
+                    <TextBlock Grid.Row="4" Grid.Column="1"
+                               Text="{Binding Path=Owner.Name}"/>
+                    <TextBlock Grid.Row="5" Grid.Column="0" Margin="0,0,8,0">
+                      Owner's Rating
+                    </TextBlock>
+                    <TextBlock Grid.Row="5" Grid.Column="1"
+                               Text="{Binding Path=Owner.Rating}"/>
+                    <TextBlock Grid.Row="6" Grid.Column="0" Margin="0,0,8,0">
+                      Member Since:
+                    </TextBlock>
+                    <TextBlock Grid.Row="6" Grid.Column="1"
+                               Text="{Binding Path=Owner.MemberSince}"/>
                 </Grid>
             </DataTemplate>
         </ResourceDictionary>

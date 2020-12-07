@@ -25,6 +25,9 @@ Class Application
 
         Dim camera = New AuctionItem("Digital camera - good condition", ProductCategory.Electronics, 300, New DateTime(2005, 8, 23), userAnna, SpecialFeatures.None)
         camera.AddBid(New Bid(310, userMike))
+        camera.AddBid(New Bid(312, userMark))
+        camera.AddBid(New Bid(314, userMike))
+        camera.AddBid(New Bid(320, userMark))
 
         AuctionItems.Add(camera)
 
