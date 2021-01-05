@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VB+WPF_DataBindingDemo변환", "VB+WPF_DataBindingDemo변환\VB+WPF_DataBindingDemo변환.vbproj", "{157D2638-1E16-4091-9D8F-60C79F6EAA03}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BindConversion", "BindConversion\BindConversion.vbproj", "{6E6E2316-10FB-4779-9404-115E2261B97F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{157D2638-1E16-4091-9D8F-60C79F6EAA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{157D2638-1E16-4091-9D8F-60C79F6EAA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{157D2638-1E16-4091-9D8F-60C79F6EAA03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6E2316-10FB-4779-9404-115E2261B97F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6E2316-10FB-4779-9404-115E2261B97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6E2316-10FB-4779-9404-115E2261B97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6E2316-10FB-4779-9404-115E2261B97F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
