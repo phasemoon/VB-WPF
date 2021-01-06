@@ -1,0 +1,43 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VB_WPF_MVVM_환율계산기"
+        xmlns:vm="clr-namespace:VB_WPF_MVVM_환율계산기.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="343.125" Width="478.438">
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Grid Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="From" FontSize="20"></TextBlock>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="To" FontSize="20"></TextBlock>
+        </Grid>
+
+        <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center">
+            <TextBox Width="150" Text="{Binding Dollar, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center">
+            <TextBox Width="150" Text="{Binding Path=Won}" IsReadOnly="True"  TextAlignment="Center"/>
+        </Grid>
+
+
+    </Grid>
+</Window>
