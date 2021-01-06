@@ -3,6 +3,9 @@
 Class MainWindow
 
     Dim a1 As MyUCContainer = Nothing
+    Dim a2 As MyUCContainer = Nothing
+    Dim a3 As MyUCContainer = Nothing
+    Dim a4 As MyUCContainer = Nothing
 
     Public Sub New()
 
@@ -17,6 +20,7 @@ Class MainWindow
 
 
     Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
-
+        a1 = New MyUCContainer("Minsu", 25)
+        myUC1.ContainerData = a1
     End Sub
 End Class
