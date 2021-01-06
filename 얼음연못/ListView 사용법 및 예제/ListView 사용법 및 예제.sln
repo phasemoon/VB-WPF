@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ListView 사용법 및 예제 1", "ListView 사용법 및 예제 1\ListView 사용법 및 예제 1.vbproj", "{A160CBAA-123C-4D14-A611-2B1C5263322D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "예제 2(ObservableCollection)", "예제 2(ObservableCollection)\예제 2(ObservableCollection).vbproj", "{B6D5EDF0-DD4C-4B5D-91C9-010C92738C92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A160CBAA-123C-4D14-A611-2B1C5263322D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A160CBAA-123C-4D14-A611-2B1C5263322D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A160CBAA-123C-4D14-A611-2B1C5263322D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A160CBAA-123C-4D14-A611-2B1C5263322D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D5EDF0-DD4C-4B5D-91C9-010C92738C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D5EDF0-DD4C-4B5D-91C9-010C92738C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D5EDF0-DD4C-4B5D-91C9-010C92738C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D5EDF0-DD4C-4B5D-91C9-010C92738C92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1705F67-D915-4C99-9C0B-30F02C261944}
+	EndGlobalSection
+EndGlobal
