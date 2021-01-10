@@ -12,7 +12,8 @@
     End Sub
 
     Private Sub OpenAddPropduct_Click(sender As Object, e As RoutedEventArgs)
-
+        Dim addProductWindow = New AddProductWindow
+        addProductWindow.ShowDialog()
     End Sub
 
     Private Sub Grouping_Checked(sender As Object, e As RoutedEventArgs)

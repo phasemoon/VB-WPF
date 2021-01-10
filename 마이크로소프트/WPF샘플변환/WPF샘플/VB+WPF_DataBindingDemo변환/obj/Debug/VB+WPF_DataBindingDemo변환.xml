@@ -54,6 +54,16 @@ VB+WPF_DataBindingDemo변환
   재정의합니다.
 </summary>
 </member>
+<member name="T:VB_WPF_DataBindingDemo변환.AddProductWindow">
+<summary>
+AddProductWindow
+</summary>
+</member>
+<member name="M:VB_WPF_DataBindingDemo변환.AddProductWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 <member name="T:VB_WPF_DataBindingDemo변환.Application">
 <summary>
 Application
@@ -77,36 +87,6 @@ MainWindow
 <member name="M:VB_WPF_DataBindingDemo변환.MainWindow.InitializeComponent">
 <summary>
 InitializeComponent
-</summary>
-</member>
-<member name="T:VB_WPF_DataBindingDemo변환.XamlGeneratedNamespace.GeneratedInternalTypeHelper">
-<summary>
-GeneratedInternalTypeHelper
-</summary>
-</member>
-<member name="M:VB_WPF_DataBindingDemo변환.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
-<summary>
-CreateInstance
-</summary>
-</member>
-<member name="M:VB_WPF_DataBindingDemo변환.XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
-<summary>
-GetPropertyValue
-</summary>
-</member>
-<member name="M:VB_WPF_DataBindingDemo변환.XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
-<summary>
-SetPropertyValue
-</summary>
-</member>
-<member name="M:VB_WPF_DataBindingDemo변환.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
-<summary>
-CreateDelegate
-</summary>
-</member>
-<member name="M:VB_WPF_DataBindingDemo변환.XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
-<summary>
-AddEventHandler
 </summary>
 </member>
 </members>
