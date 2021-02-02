@@ -40,3 +40,5 @@ C:\Users\SGLEE\source\repos\phasemoon\VB-WPF\마이크로소프트\WPF샘플변�
 D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\마이크로소프트\WPF샘플변환\WPF샘플\VB+WPF_DataBindingDemo변환\obj\Debug\GeneratedInternalTypeHelper.g.vb
 C:\Users\SGLEE\source\repos\phasemoon\VB-WPF\마이크로소프트\WPF샘플변환\WPF샘플\VB+WPF_DataBindingDemo변환\obj\Debug\AddProductWindow.g.vb
 C:\Users\SGLEE\source\repos\phasemoon\VB-WPF\마이크로소프트\WPF샘플변환\WPF샘플\VB+WPF_DataBindingDemo변환\obj\Debug\AddProductWindow.baml
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\마이크로소프트\WPF샘플변환\WPF샘플\VB+WPF_DataBindingDemo변환\obj\Debug\AddProductWindow.g.vb
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\마이크로소프트\WPF샘플변환\WPF샘플\VB+WPF_DataBindingDemo변환\obj\Debug\AddProductWindow.baml

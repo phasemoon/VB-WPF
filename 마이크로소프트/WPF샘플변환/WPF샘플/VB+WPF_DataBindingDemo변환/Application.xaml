@@ -11,33 +11,36 @@
             </ResourceDictionary.MergedDictionaries>
             
             <DataTemplate DataType="{x:Type local:AuctionItem}">
-                <Grid Name="AuctionItemsGrid">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="20"/>
-                        <ColumnDefinition Width="86"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Row="0" Grid.Column="1" Margin="0,0,8,0"
+                <Border Style="{StaticResource AuctionItemBorderStyle}" Name="border">
+                    <Grid Name="AuctionItemsGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="86"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="1" Margin="0,0,8,0"
                                    Name="descriptionTitle">
                     Decription:
-                    </TextBlock>
-                    <TextBlock Grid.Row="0" Grid.Column="2"
+                        </TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2"
                                Text="{Binding Path=Description}"/>
-                    <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,0,8,0">
+                        <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,0,8,0">
                     Current Price:
-                    </TextBlock>
-                    <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
-                        <TextBlock Name="Dollar" Text="$"/>
-                        <TextBlock Name="CurrentPriceDTdataType"
+                        </TextBlock>
+                        <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
+                            <TextBlock Name="Dollar" Text="$"/>
+                            <TextBlock Name="CurrentPriceDTdataType"
                                    Text="{Binding Path=CurrentPrice}"/>
-                    </StackPanel>
-                </Grid>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+                
             </DataTemplate>
 
             <DataTemplate x:Key="DetailsProductListingTemplate">

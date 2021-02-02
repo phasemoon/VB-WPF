@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Add Product Listing" SizeToContent="WidthAndHeight" Loaded="Window_Loaded">
     <Window.Resources>
+        <local:SpecialFeaturesConverter x:Key="SpecailFeaturesConverter"/>
         <ControlTemplate x:Key="ValidationTemplate">
             <DockPanel>
                 <TextBlock Foreground="Red" FontSize="20">!</TextBlock>

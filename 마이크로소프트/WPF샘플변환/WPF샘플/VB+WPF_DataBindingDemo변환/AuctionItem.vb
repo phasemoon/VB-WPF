@@ -53,7 +53,7 @@ Public Class AuctionItem
             End If
             mStartPrice = value
             OnPropertyChanged("StartPrice")
-            'OnPropertyChanged("CurrentPrice")
+            OnPropertyChanged("CurrentPrice")
         End Set
     End Property
 
