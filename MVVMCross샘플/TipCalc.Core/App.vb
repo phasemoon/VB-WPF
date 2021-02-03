@@ -11,6 +11,7 @@ Public Class App
         Mvx.IoCProvider.RegisterType(Of ICalculationService, CalculationService)()
 
         RegisterAppStart(Of TipViewModel)()
+
     End Sub
 
 End Class
