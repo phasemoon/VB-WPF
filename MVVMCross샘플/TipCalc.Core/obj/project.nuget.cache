@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3vKMKkV0aXaPULvOsLNmnhiOYpnyhRx941dbGQ2W0eEx5C6C7Qd+Nc0OzXSpQ0DSY9plGxEEwNsu1WFx+k8W9A==",
+  "success": true,
+  "projectFilePath": "D:\\TA-PC자료\\계정(TA)\\내 문서\\Visual Studio 2015\\Projects\\연습4(새 노트북)\\phasemoon\\VB-WPF\\MVVMCross샘플\\TipCalc.Core\\TipCalc.Core.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dukgo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dukgo\\.nuget\\packages\\mvvmcross\\7.1.2\\mvvmcross.7.1.2.nupkg.sha512",
+    "C:\\Users\\dukgo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
