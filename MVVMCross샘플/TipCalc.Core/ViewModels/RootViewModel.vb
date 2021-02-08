@@ -2,14 +2,13 @@
 'Imports TipCalc.Core.Services
 Imports System.Threading.Tasks
 Imports MvvmCross.Navigation
-Imports MvvmCross.Logging
 Imports MvvmCross.Commands
-Imports MvvmCross.Localization
-Imports MvvmCross
-Imports MvvmCross.Plugin.Messenger
+Imports MvvmCross.Logging
 
 Public Class RootViewModel
     Inherits MvxNavigationViewModel
+
+    Private ReadOnly _navigationService As IMvxNavigationService
 
     Private ReadOnly Property _mvxViewModelLoader As IMvxViewModelLoader
 
@@ -17,11 +16,7 @@ Public Class RootViewModel
 
     Private _welcomeText As String = "Default welcome"
 
-    Public ReadOnly Property TextSource As IMvxLanguageBinder
-        Get
-            Return New MvxLanguageBinder("TipCalc.Core", "Text")
-        End Get
-    End Property
+
 
     Public Sub New(logProvider As IMvxLogProvider, mNavigationService As IMvxNavigationService, mvxViewModelLoader As IMvxViewModelLoader)
         MyBase.New(logProvider, mNavigationService)
@@ -34,13 +29,15 @@ Public Class RootViewModel
         '    Console.WriteLine(ex.ToString)
         'End Try
 
-        'ShowChildCommand = New MvxAsyncCommand(Async Function()
-        '                                           .Message = "Hey",
-        '                                           .Value = 1.23D
-        '                                           })
-        '                                           Dim testIfReturn = result
-        '                                       End Function)
+        ShowChildCommand = New MvxAsyncCommand(Async Function()
+                                                   Dim result = Await NavigationService.Navigate(Of ChildViewModel, SampleModel, SampleModel)(New SampleModel With {
+                                                   .Message = "Hey",
+                                                   .Value = 1.23D
+                                                   })
+                                                   Dim testIfReturn = result
+                                               End Function)
 
+        'ShowWindowCommand = New MvxAsyncCommand(Async Function() Await NavigationService.Navigate(Of WindowViewModel))
 
     End Sub
 

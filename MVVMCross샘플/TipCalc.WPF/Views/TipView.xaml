@@ -8,6 +8,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="450">
     <Grid>
+        
         <StackPanel Margin="12,0,12,0">
             <TextBlock Text="SubTotal" />
             <TextBox Text="{Binding SubTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />

@@ -10,8 +10,6 @@
       "TipCalc.Core/1.0.0": {
         "dependencies": {
           "MvvmCross": "7.1.2",
-          "MvvmCross.Plugin.JsonLocalization": "7.1.2",
-          "MvvmCross.Plugin.Messenger": "7.1.2",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
@@ -27,64 +25,9 @@
           }
         }
       },
-      "MvvmCross.Plugin.Json/7.1.2": {
-        "dependencies": {
-          "MvvmCross": "7.1.2",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "runtime": {
-          "lib/netstandard2.0/MvvmCross.Plugin.Json.dll": {
-            "assemblyVersion": "7.1.2.0",
-            "fileVersion": "7.1.2.0"
-          }
-        }
-      },
-      "MvvmCross.Plugin.JsonLocalization/7.1.2": {
-        "dependencies": {
-          "MvvmCross": "7.1.2",
-          "MvvmCross.Plugin.Json": "7.1.2",
-          "MvvmCross.Plugin.ResourceLoader": "7.1.2"
-        },
-        "runtime": {
-          "lib/netstandard2.0/MvvmCross.Plugin.JsonLocalization.dll": {
-            "assemblyVersion": "7.1.2.0",
-            "fileVersion": "7.1.2.0"
-          }
-        }
-      },
-      "MvvmCross.Plugin.Messenger/7.1.2": {
-        "dependencies": {
-          "MvvmCross": "7.1.2"
-        },
-        "runtime": {
-          "lib/netstandard2.0/MvvmCross.Plugin.Messenger.dll": {
-            "assemblyVersion": "7.1.2.0",
-            "fileVersion": "7.1.2.0"
-          }
-        }
-      },
-      "MvvmCross.Plugin.ResourceLoader/7.1.2": {
-        "dependencies": {
-          "MvvmCross": "7.1.2"
-        },
-        "runtime": {
-          "lib/netstandard2.0/MvvmCross.Plugin.ResourceLoader.dll": {
-            "assemblyVersion": "7.1.2.0",
-            "fileVersion": "7.1.2.0"
-          }
-        }
-      },
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
-        }
-      },
-      "Newtonsoft.Json/12.0.3": {
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.3.23909"
-          }
         }
       }
     }
@@ -109,47 +52,12 @@
       "path": "mvvmcross/7.1.2",
       "hashPath": "mvvmcross.7.1.2.nupkg.sha512"
     },
-    "MvvmCross.Plugin.Json/7.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-b2mo4n6GRjTQcJw/l91FE6DMR/W3CIf7zl2/jX3h5CKmJjK7hhv0TNIU2ZJ3PdXuEQfEXuBmKZmmidmQcwcfEg==",
-      "path": "mvvmcross.plugin.json/7.1.2",
-      "hashPath": "mvvmcross.plugin.json.7.1.2.nupkg.sha512"
-    },
-    "MvvmCross.Plugin.JsonLocalization/7.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-qul23Rp+6Kn1974V0oZo/6WwTw8BFZ0NQeOurAtEDJrw7nwkBJAXGLLaunaGacXJwQgQeO7n3ssOUaUVrbTJLA==",
-      "path": "mvvmcross.plugin.jsonlocalization/7.1.2",
-      "hashPath": "mvvmcross.plugin.jsonlocalization.7.1.2.nupkg.sha512"
-    },
-    "MvvmCross.Plugin.Messenger/7.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Fc1RUrSVk2FbEUNod/001PJ29jCOtIVppHx34ycX8zHB40XjpdX5dGYTGitcxmse5rz6SUL1pVf+7+fslBcbrg==",
-      "path": "mvvmcross.plugin.messenger/7.1.2",
-      "hashPath": "mvvmcross.plugin.messenger.7.1.2.nupkg.sha512"
-    },
-    "MvvmCross.Plugin.ResourceLoader/7.1.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IjRin3k8jEwfcoBNlgAb+O1rMJU84ArmcfnfvkVT99IjjplJ8cWEpYWnbmRAz4gaKx4xezzedHPUUk9P/Zp4QQ==",
-      "path": "mvvmcross.plugin.resourceloader/7.1.2",
-      "hashPath": "mvvmcross.plugin.resourceloader.7.1.2.nupkg.sha512"
-    },
     "NETStandard.Library/2.0.3": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
-    },
-    "Newtonsoft.Json/12.0.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
-      "path": "newtonsoft.json/12.0.3",
-      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     }
   }
 }

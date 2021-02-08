@@ -6,16 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ViewModels\Navigation\**" />
-    <EmbeddedResource Remove="ViewModels\Navigation\**" />
-    <None Remove="ViewModels\Navigation\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="Services\TextProviderBuilder.vb" />
     <Compile Remove="ViewModels\BaseViewModel.vb" />
+    <Compile Remove="ViewModels\ChildViewModel.vb" />
     <Compile Remove="ViewModels\MainViewModel.vb" />
-    <Compile Remove="ViewModels\RootViewModel.vb" />
   </ItemGroup>
 
   <ItemGroup>

@@ -54,6 +54,16 @@ TipCalc.WPF
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:TipCalc.WPF.ChildView">
+<summary>
+ChildView
+</summary>
+</member>
+<member name="M:TipCalc.WPF.ChildView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 <member name="T:TipCalc.WPF.DetailView">
 <summary>
 DetailView
@@ -80,6 +90,26 @@ MasterView
 </summary>
 </member>
 <member name="M:TipCalc.WPF.MasterView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TipCalc.WPF.RootView">
+<summary>
+RootView
+</summary>
+</member>
+<member name="M:TipCalc.WPF.RootView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TipCalc.WPF.SecondChildView">
+<summary>
+SecondChildView
+</summary>
+</member>
+<member name="M:TipCalc.WPF.SecondChildView.InitializeComponent">
 <summary>
 InitializeComponent
 </summary>

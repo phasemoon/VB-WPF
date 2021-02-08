@@ -13,10 +13,12 @@ Public Class FirstViewModel
         _navigationService = navigationService
 
         NavigateCommand = New MvxAsyncCommand(Function() _navigationService.Navigate(Of SecondViewModel))
+        NavigateCommand2 = New MvxAsyncCommand(Function() _navigationService.Navigate(Of TipViewModel))
 
     End Sub
 
     Public Property NavigateCommand As MvxAsyncCommand
 
+    Public Property NavigateCommand2 As MvxAsyncCommand
 
 End Class
