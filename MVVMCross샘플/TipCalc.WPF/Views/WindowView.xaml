@@ -1,0 +1,36 @@
+﻿<views:MvxWindow   xmlns:vm="clr-namespace:TipCalc.Core;assembly=TipCalc.Core"
+                    xmlns:views="clr-namespace:MvvmCross.Platforms.Wpf.Views;assembly=MvvmCross.Platforms.Wpf"
+    x:TypeArguments="vm:WindowViewModel"
+        x:Class="WindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TipCalc.WPF"
+        mc:Ignorable="d"
+        Title="{Binding Title}" Height="300" Width="300">
+    <views:MvxWindow.ContentTemplate>
+        <DataTemplate>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid DataContext="{Binding DataContext, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
+                <!--<Grid>-->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Show 1st Child" 
+                        Command="{Binding ShowWindowChildCommand}" CommandParameter="1"
+                        Margin="5" Padding="5" />
+                    <Button Content="Show 2nd Child" Grid.Column="1"
+                        Command="{Binding ShowWindowChildCommand}" CommandParameter="2"
+                        Margin="5" Padding="5" />
+                </Grid>
+                <ContentPresenter Content="{Binding }" Grid.Row="1" />
+            </Grid>
+        </DataTemplate>
+    </views:MvxWindow.ContentTemplate>
+</views:MvxWindow>

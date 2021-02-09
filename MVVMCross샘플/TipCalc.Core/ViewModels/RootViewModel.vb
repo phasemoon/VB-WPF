@@ -37,7 +37,9 @@ Public Class RootViewModel
                                                    Dim testIfReturn = result
                                                End Function)
 
-        'ShowWindowCommand = New MvxAsyncCommand(Async Function() Await NavigationService.Navigate(Of WindowViewModel))
+        ShowWindowCommand = New MvxAsyncCommand(Async Function() Await NavigationService.Navigate(Of WindowViewModel))
+
+        ShowModalCommand = New MvxAsyncCommand(AddressOf Navigate)
 
     End Sub
 
@@ -48,6 +50,7 @@ Public Class RootViewModel
     Public ReadOnly Property ShowCustumBindingCommand As IMvxCommand
     Public ReadOnly Property ShowTabsCommand As IMvxCommand
     Public ReadOnly Property ShowPagesCommand As IMvxCommand
+    Public ReadOnly Property ShowWindowCommand As IMvxCommand
 
     Private _isVisible As Boolean
     Public Property IsVisible As Boolean
@@ -70,11 +73,35 @@ Public Class RootViewModel
         End Set
     End Property
 
+    Public Property TimeToRegister As String
+    Public Property TimeToResolve As String
+    Public Property TotalTime As String
+
+
     Public Overrides Async Function Initialize() As Task
         Log.Warn(Function() "Testing log")
 
         Await MyBase.Initialize
     End Function
 
+    Public Overrides Sub ViewAppearing()
+        MyBase.ViewAppearing()
+
+        MyTask = MvxNotifyTask.Create(
+            Async Function()
+                Await Task.Delay(300)
+                WelcomeText = "Welcome to MvvmCross"
+                Throw New Exception("Boom")
+            End Function, Sub(exception)
+                          End Sub)
+    End Sub
+
+    Private Async Function Navigate() As Task
+        Try
+            Await NavigationService.Navigate(Of ModalViewModel)()
+        Catch ex As Exception
+
+        End Try
+    End Function
 
 End Class

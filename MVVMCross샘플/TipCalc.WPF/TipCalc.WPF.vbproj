@@ -93,6 +93,12 @@
     <Compile Include="Views\MasterView.xaml.vb">
       <DependentUpon>MasterView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ModalView.xaml.vb">
+      <DependentUpon>ModalView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NestedModalView.xaml.vb">
+      <DependentUpon>NestedModalView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RootView.xaml.vb">
       <DependentUpon>RootView.xaml</DependentUpon>
     </Compile>
@@ -104,6 +110,12 @@
     </Compile>
     <Compile Include="Views\TipView.xaml.vb">
       <DependentUpon>TipView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WindowChildView.xaml.vb">
+      <DependentUpon>WindowChildView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WindowView.xaml.vb">
+      <DependentUpon>WindowView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -133,6 +145,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\ModalView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NestedModalView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\RootView.xaml">
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
@@ -146,6 +166,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\TipView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WindowChildView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

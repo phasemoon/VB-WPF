@@ -94,6 +94,26 @@ MasterView
 InitializeComponent
 </summary>
 </member>
+<member name="T:TipCalc.WPF.ModalView">
+<summary>
+ModalView
+</summary>
+</member>
+<member name="M:TipCalc.WPF.ModalView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TipCalc.WPF.NestedModalView">
+<summary>
+NestedModalView
+</summary>
+</member>
+<member name="M:TipCalc.WPF.NestedModalView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 <member name="T:TipCalc.WPF.RootView">
 <summary>
 RootView
@@ -130,6 +150,26 @@ TipView
 </summary>
 </member>
 <member name="M:TipCalc.WPF.TipView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TipCalc.WPF.WindowChildView">
+<summary>
+WindowChildView
+</summary>
+</member>
+<member name="M:TipCalc.WPF.WindowChildView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TipCalc.WPF.WindowView">
+<summary>
+WindowView
+</summary>
+</member>
+<member name="M:TipCalc.WPF.WindowView.InitializeComponent">
 <summary>
 InitializeComponent
 </summary>

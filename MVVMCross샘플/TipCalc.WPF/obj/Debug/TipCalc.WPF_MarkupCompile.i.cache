@@ -10,11 +10,11 @@ none
 false
 
 D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\Application.xaml
-91193202662
+13-1249210928
 
-15-1418748473
+19-1089064864
 182046266953
-MainWindow.xaml;Views\ChildView.xaml;Views\DetailView.xaml;Views\FirstView.xaml;Views\MasterView.xaml;Views\RootView.xaml;Views\SecondChildView.xaml;Views\SecondView.xaml;Views\TipView.xaml;
+MainWindow.xaml;Views\ChildView.xaml;Views\DetailView.xaml;Views\FirstView.xaml;Views\MasterView.xaml;Views\ModalView.xaml;Views\NestedModalView.xaml;Views\RootView.xaml;Views\SecondChildView.xaml;Views\SecondView.xaml;Views\TipView.xaml;Views\WindowChildView.xaml;Views\WindowView.xaml;
 
 True
 

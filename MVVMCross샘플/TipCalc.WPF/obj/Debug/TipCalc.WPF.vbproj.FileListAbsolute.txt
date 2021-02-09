@@ -40,3 +40,11 @@ D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노
 D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\ChildView.baml
 D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\SecondChildView.g.vb
 D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\SecondChildView.baml
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\WindowView.g.vb
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\WindowView.baml
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\WindowChildView.g.vb
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\WindowChildView.baml
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\ModalView.g.vb
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\ModalView.baml
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\NestedModalView.g.vb
+D:\TA-PC자료\계정(TA)\내 문서\Visual Studio 2015\Projects\연습4(새 노트북)\phasemoon\VB-WPF\MVVMCross샘플\TipCalc.WPF\obj\Debug\Views\NestedModalView.baml

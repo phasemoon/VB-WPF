@@ -14,9 +14,9 @@ Public Class App
         'RegisterAppStart(Of TipViewModel)()
 
         RegisterAppStart(Of FirstViewModel)()
-        'RegisterAppStart(Of MasterViewModel)()
+        RegisterAppStart(Of MasterViewModel)()
 
-        RegisterAppStart(Of RootViewModel)()
+        'RegisterAppStart(Of RootViewModel)()
 
         'CreatableTypes().EndingWith("Service").AsInterfaces().RegisterAsSingleton()
         'Mvx.IoCProvider.RegisterSingleton(Of IMvxTextProvider)(New TextProviderBuilder().TextProvider)
