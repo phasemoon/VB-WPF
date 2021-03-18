@@ -24,7 +24,8 @@ Namespace ViewModel
         Public Sub New()
             'OnClickCommand = New RelayCommand(AddressOf OnClickCommandAction)
             'C#의 Null에 일대일로 대치되는 VB.NET가 없는것 같다..
-            OnClickCommand = New RelayCommand(AddressOf OnClickCommandAction, False)
+            'OnClickCommand = New RelayCommand(AddressOf OnClickCommandAction, False)
+            OnClickCommand = New RelayCommand(AddressOf SearchCommandMethod, False)
 
         End Sub
 
@@ -32,6 +33,10 @@ Namespace ViewModel
             Dim viewModelMessage = New ViewModelMessage With {.Text = TextBoxText}
 
             Messenger.Default.Send(viewModelMessage)
+        End Sub
+
+        Private Sub SearchCommandMethod()
+            Messenger.Default.Send(New PropertyChangedMessage(Of String)("", Me.TextBoxText, "TextBoxText"))
         End Sub
 
     End Class

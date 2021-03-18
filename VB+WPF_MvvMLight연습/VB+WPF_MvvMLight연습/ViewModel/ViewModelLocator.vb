@@ -43,7 +43,7 @@ Namespace ViewModel
             '    SimpleIoc.Default.Register(Of IDataService, DataService)();
             'end if
 
-            'SimpleIoc.Default.Register(Of MainViewModel)()
+            SimpleIoc.Default.Register(Of MainViewModel)()
 
             SimpleIoc.Default.Register(Of SenderViewModel)()
             SimpleIoc.Default.Register(Of ReceiverViewModel)()

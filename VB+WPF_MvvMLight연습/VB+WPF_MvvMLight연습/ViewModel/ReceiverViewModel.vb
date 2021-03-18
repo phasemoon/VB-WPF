@@ -13,7 +13,7 @@ Namespace ViewModel
             End Get
             Set(value As String)
 
-                [Set](mContentText, "ContentText", value)
+                [Set]("ContentText", mContentText, value)
                 'mContentText = value
                 'RaisePropertyChanged("ContentText")
             End Set
@@ -21,6 +21,13 @@ Namespace ViewModel
 
         Public Sub New()
             Messenger.Default.Register(Of ViewModelMessage)(Me, AddressOf OnThisMessageAction)
+            MessengerInstance.Register(Of PropertyChangedMessage(Of String))(Me, AddressOf SenderViewModelChanged)
+        End Sub
+
+        Private Sub SenderViewModelChanged(propertyDetails As PropertyChangedMessage(Of String))
+            If propertyDetails.PropertyName = "TextBoxText" Then
+                Dim tmp As String = propertyDetails.NewValue
+            End If
         End Sub
 
         Private Sub OnThisMessageAction(obj As ViewModelMessage)
