@@ -11,7 +11,7 @@
         ' Create the ViewModel to which 
         ' the main window binds.
         Dim path As String = "Data/customers.xml"
-        Dim viewModel = New MianWindowViewModel(path)
+        Dim viewModel = New MainWindowViewModel(path)
 
         Dim handler As EventHandler = Nothing
         handler = Function()

@@ -68,10 +68,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Customer.vb" />
+    <Compile Include="Model\CustomerRepository.vb" />
     <Compile Include="RelayCommand.vb" />
     <Compile Include="ViewModel\CommandViewModel.vb" />
-    <Compile Include="ViewModel\MianWindowViewModel.vb" />
+    <Compile Include="ViewModel\CustomerViewModel.vb" />
+    <Compile Include="ViewModel\MainWindowViewModel.vb" />
     <Compile Include="ViewModel\ViewModelBase.vb" />
+    <Compile Include="ViewModel\WorkspaceViewModel.vb" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -140,7 +144,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
